@@ -604,6 +604,7 @@ void usb_sg_cancel(struct usb_sg_request *io)
 		    && retval != -EIDRM)
 			dev_warn(&io->dev->dev, "%s, unlink --> %d\n",
 				 __func__, retval);
+<<<<<<< HEAD
 			usb_block_urb(io->urbs[i]);
 
 			retval = usb_unlink_urb(io->urbs[i]);
